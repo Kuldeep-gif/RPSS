@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.choice {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+}
+
+.choice img {
+    width: 100%;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#result-text {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.glow {
+    animation: glow 1s ease-in-out infinite;
+}
